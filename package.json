@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-proof-of-concept",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Proof of concept for an isomorphic web application using the Flux pattern. Uses Riot for the view layer and Redux for the Flux stores.",
   "main": "index.js",
   "scripts": {
