@@ -1,0 +1,27 @@
+{
+  "name": "isomorphic-proof-of-concept",
+  "version": "0.0.0",
+  "description": "Proof of concept for an isomorphic web application using the Flux pattern. Uses Riot for the view layer and Redux for the Flux stores.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Pablo Sichert <mail@pablosichert.de> (https://pablosichert.de)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "nunjucks": "^2.1.0",
+    "redux": "^3.0.2",
+    "riot": "^2.2.4"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-riot": "^0.3.1",
+    "gulp-sequence": "^0.4.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "run-sequence": "^1.1.4"
+  }
+}
