@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{opts.store.title}}</title>
+  </head>
+  <body>
+    {{html}}
+    <script src="/js/app.js"></script>
+    <script>
+      riot.mount('app', {{opts | dump}});
+    </script>
+  </body>
+</html>
