@@ -1,3 +1,5 @@
+"use strict";
+
 var concat        = require('gulp-concat');
 var gulp          = require('gulp');
 var gulpSequence  = require('gulp-sequence');

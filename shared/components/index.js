@@ -1,4 +1,5 @@
-import path from 'path';
+"use strict";
+
 import fs   from 'fs';
 
 var tags = {};
@@ -8,7 +9,7 @@ fs.readdirSync(__dirname).forEach(function(filename) {
   var name      = file[0];
   var extension = file[1];
 
-  if (extension == 'tag') {
+  if (extension === 'tag') {
     tags[name] = require('./' + filename);
   }
 });
