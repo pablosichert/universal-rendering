@@ -2,8 +2,5 @@
   "name": "isomorphic-proof-of-concept",
   "private": true,
   "dependencies": {
-    "riot": "~2.2.4",
-    "riot-route": "~2.0.0-beta",
-    "jquery": "~2.1.4"
   }
 }
