@@ -8,7 +8,7 @@ import nunjucks       from 'nunjucks';
 import riot           from 'riot';
 import reducers       from '../shared/reducers';
 import routes         from '../shared/routes';
-import tags           from '../shared/components';
+import riotApp        from '../shared/components/app';
 
 export default function() {
   var app = express();
@@ -24,34 +24,21 @@ export default function() {
   app.use((req, res, next) => {
     // Default state
     req.state = {
-      title: config.defaultTitle,
-      url: req.url
+      activeRoute:  routes.home
     };
-
     next();
   });
 
-  app.get(routes.home.path, (req, res, next) => {
-    req.state.title = routes.home.title;
-
-    next();
-  });
-
-  app.get(routes.page1.path, (req, res, next) => {
-    req.state.title = routes.page1.title;
-
-    next();
-  });
-
-  app.get(routes.page2.path, (req, res, next) => {
-    req.state.title = routes.page2.title;
-
-    next();
-  });
+  for (let route in routes) {
+    app.get(routes[route].path, (req, res, next) => {
+      req.state.activeRoute = routes[route];
+      next();
+    });
+  }
 
   app.use((req, res) => {
     var store = createStore(reducers, req.state);
-    var html = riot.render(tags.app, {isClient: false, routes: routes, store: store});
+    var html = riot.render(riotApp, {isClient: false, routes: routes, store: store, state: store.getState()});
 
     res.render('base', {
       html: html,
