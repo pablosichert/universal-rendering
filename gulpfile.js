@@ -12,8 +12,12 @@ gulp.task('bundle-client-files', function() {
   return browserify({
       debug: true,
       entries: ['client/app.js'],
-      transform: [babelify, riotify]
-    }).bundle()
+      transform: [
+        [babelify],
+        [riotify, {"type": "es6"}]
+      ]
+    })
+    .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('public/js'))
   ;
