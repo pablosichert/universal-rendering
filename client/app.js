@@ -7,9 +7,11 @@ import riot           from 'riot';
 import routes         from '../shared/routes';
 
 const store = createStore(reducers, window.state);
+var state = store.getState();
 
 riot.mount(app, {
   isClient: true,
   routes: routes,
-  store: store
+  store: store,
+  state: state
 });
