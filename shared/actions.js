@@ -1,8 +1,7 @@
 "use strict";
 
 var actionsSet = new Set([
-  'URL_CHANGE',
-  'TITLE_CHANGE'
+  'ROUTE_CHANGE'
 ]);
 
 var actionsObj = {};
