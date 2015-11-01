@@ -6,6 +6,8 @@ Uses
 - [Page.js](https://visionmedia.github.io/page.js/) for client side routing
 - [Express](http://expressjs.com/) for server side routing
 
+Check out the [demo](https://isomorphic-proof-of-concept.github.pablosichert.de/)!
+
 ## Quick Installation and Start
 ```
  > git clone https://github.com/PabloSichert/isomorphic-proof-of-concept
