@@ -13,7 +13,7 @@
     "nunjucks": "^2.1.0",
     "page": "^1.6.4",
     "redux": "^3.0.2",
-    "riot": "^2.2.4"
+    "riot": "2.2.x"
   },
   "devDependencies": {
     "babel": "^5.8.23",
