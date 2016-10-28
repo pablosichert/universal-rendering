@@ -1,4 +1,4 @@
-# Isomorphic Application - Proof of Concept
+# Universal Rendering - Proof of Concept
 This lightweight application aims to showcase how easy it can be to get an isomorphic app started.
 Check out the [demo](https://isomorphic-proof-of-concept.github.pablosichert.de/)! Uses
 - [Riot](http://riotjs.com/) as view engine (client and server side)
